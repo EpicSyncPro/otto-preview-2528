@@ -1,0 +1,57 @@
+/* Direction B "Your commerce, your call": ink heroes on a 64px grid, ruled tables, strong comparisons. */
+.dir-b{background:#F6F4EF}
+.ph-b{background:var(--ink);color:#fff;overflow:hidden;padding:64px 0 80px}
+.ph-b::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 95%);mask-image:linear-gradient(180deg,#000 30%,transparent 95%)}
+.ph-b .ph-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+.ph-b.is-solo .ph-grid{grid-template-columns:minmax(0,1fr)}
+.ph-b .eyebrow{color:var(--cyan)}
+.ph-b .eyebrow i{background:var(--cyan)}
+.ph-b h1{color:#fff}
+.ph-b .o-crumbs a{color:#fff}
+.ph-b .ph-stage .o-fig img{box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+@media (max-width:900px){.ph-b .ph-grid{grid-template-columns:minmax(0,1fr);gap:32px}.ph-b{padding:44px 0 56px}}
+
+.b-sec+.b-sec{border-top:1px solid var(--line)}
+.dir-b .o-sec-head .eyebrow{color:var(--ink)}
+.dir-b .o-sec-head .eyebrow::before{content:"";width:9px;height:9px;background:var(--cyan)}
+.dir-b .o-card{border-radius:6px;background:#fff;border:1px solid rgba(27,29,35,.14)}
+.dir-b .o-card .o-k{color:#005A8A}
+.dir-b .o-pills li{border-radius:6px;background:#fff}
+.dir-b .o-table{background:#fff;border:1.5px solid var(--ink)}
+.dir-b .o-table thead th{background:var(--ink);color:#fff;letter-spacing:.06em}
+.dir-b .o-table tbody tr:nth-child(even){background:#FAF9F6}
+.dir-b .o-table th,.dir-b .o-table td{border-bottom-color:rgba(27,29,35,.14)}
+.dir-b .is-compare .o-table td:nth-child(2){background:var(--cyan-pale)}
+.dir-b .o-plan{border-radius:8px;background:#fff}
+.dir-b .o-plan.is-featured{box-shadow:0 0 0 2px var(--ink),0 30px 60px -30px rgba(27,29,35,.5)}
+.dir-b .o-faq summary{font-size:17.5px}
+.dir-b .o-placeholder,.dir-b .o-boiler,.dir-b .o-posts li,.dir-b .o-timeline li,.dir-b .o-form,.dir-b .o-logos li{border-radius:8px}
+
+.b-cap td{width:50%;font-size:16px}
+.b-cap td:first-child{font-weight:600}
+.b-cap td:last-child{color:#3F424B}
+.b-band{background:var(--ink);color:#fff;padding:clamp(56px,7vw,96px) 0;position:relative;overflow:hidden;isolation:isolate}
+.b-band::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:64px 64px}
+.b-band-in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.b-band .eyebrow{color:var(--cyan)}
+.b-band h2{font-size:clamp(28px,3.2vw,40px);line-height:1.08;margin-top:12px}
+.b-band-p{color:var(--on-ink-2);margin-top:14px;font-size:17px}
+.b-steps{margin:28px 0 0;padding:0;list-style:none;counter-reset:b;display:grid;gap:0;border-top:1px solid var(--line-ink)}
+.b-steps li{counter-increment:b;display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-ink);font-weight:500}
+.b-steps li::before{content:counter(b,decimal-leading-zero);color:var(--cyan);font-weight:700;font-variant-numeric:tabular-nums}
+.b-card{background:#fff;color:var(--ink);border-radius:10px;padding:16px;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;min-width:0}
+.b-card-tag{justify-self:start;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2)}
+.b-card .o-panel{box-shadow:none;max-width:none}
+.b-card .o-fig{max-width:none}
+.b-card :focus-visible{outline-color:var(--blue)}
+@media (max-width:900px){.b-band-in{grid-template-columns:minmax(0,1fr);gap:32px}}
+
+.o-plan-table td{text-align:center;width:22%}
+.o-plan-table thead th:not(:first-child){text-align:center}
+.o-plan-table .o-price-row th,.o-plan-table .o-price-row td{background:var(--sand)}
+
+.b-cta{background:var(--ink);color:#fff;border-top:1px solid var(--line-ink)}
+.b-cta-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:end}
+.b-cta-in p{color:var(--on-ink-2);margin-bottom:20px}
+@media (max-width:760px){.b-cta-in{grid-template-columns:1fr;gap:20px}}
+.dir-b .site-footer{border-top:0}
